@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante "El socarrat"</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/paella.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilo-formulario.css">
+</head>
+
+<body>
+    <h2>Haz tu reserva</h2>
+    <form>
+        <div class="caja1">
+            <section>
+                <div class="caja2">
+                    <label for="nombredelusuario">Nombre:</label>
+                    <br>
+                    <br>
+                    <input type="text" id="nombredelusuario" name="usuario" placeholder="nombre" required>
+                </div>
+
+
+                <div class="caja2">
+                    <label for="apellidodelusuario">Apellido:</label>
+                    <br>
+                    <br>
+                    <input type="text" id="apellidodelusuario" name="apellido" placeholder="Apellido" required>
+                </div>
+
+
+                <div class="caja2">
+                    <label for="emaildelusuario">Email:</label>
+                    <br>
+                    <br>
+                    <input type="email" id="emaildelusuario" name="email" placeholder="email" required>
+                </div>
+
+                <div class="caja2">
+                    <label for="telef">Teléfono:</label>
+                    <br>
+                    <br>
+                    <input type="tel" id="telef" placeholder="612 345 678" name="tel" required>
+                </div>
+
+                <div class="caja2">
+                    <label for="personas">Cantidad de personas:</label>
+                    <br>
+                    <br>
+                    <input type="number" id="personas" name="personas" min="1" max="10" value="1" required>
+                </div>
+
+
+                <div class="caja2">
+                    <p>Selecciona tu preferencia:</p>
+                    <input type="radio" id="afuera" name="ubicacion" value="afuera">
+                    <label for="afuera">Afuera</label>
+               
+                    <input type="radio" id="adentro" name="ubicacion" value="adentro">
+                    <label for="adentro">Adentro</label>
+                    </div>
+
+                <div class="caja2">
+                <label for="fecha">Fecha para la reserva:</label>
+                <br>
+                <br>
+                <input type="date" id="fecha" name="fecha" value="2026-03-25" required>
+                </div>
+
+                <div class="caja2">
+                <label for="hora">Selecciona una hora:</label>
+                <br>
+                <br>
+                <input type="time" id="hora" name="hora" required>
+                </div>
+                <br>
+                <div class="caja2">
+                <label for="mensaje">Sugerencia:</label>
+                <br>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                </div>
+<br>
+
+<input type="submit" value="Enviar Reserva →">
+
+
+
+
+
+
+
+
+
+            </section>
+        </div>
+    </form>
+</body>
+
+</html>
