@@ -1,0 +1,170 @@
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+
+  padding: 1rem; /
+}
+
+.card-container {  
+  background-color: #ffffff;  
+  padding: 2rem;   
+  border-radius: 0.5rem;   
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  width: 100%;
+  
+  max-width: 28rem; 
+}
+
+h2 {
+ 
+  font-size: 1.875rem; 
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem; 
+  text-align: center;
+
+}
+
+label {
+  display: block;
+  font-size: 0.875rem; 
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+input {
+  margin-top: 0.25rem; 
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem; 
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  border-color: #3b82f6;
+}
+
+.input-password {
+  
+  display: block;
+  width: 100%;
+
+  
+  padding: 0.5rem 0.75rem; 
+
+  
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  
+  box-sizing: border-box; 
+}
+
+
+.input-password::placeholder {
+  color: #9ca3af;
+}
+
+
+.input-password:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: #3b82f6;
+  
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-icon-container {
+  
+  position: absolute;
+
+  
+  top: 0;
+  bottom: 0;
+
+  
+  right: 0;
+
+  
+  padding-right: 0.75rem; 
+
+  
+  display: flex;
+  align-items: center;
+}
+
+button {
+  
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  
+  padding: 0.5rem 1rem; 
+  font-size: 0.875rem; 
+  font-weight: 500;
+
+  
+  border: 1px solid transparent;
+  border-radius: 0.375rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  
+  color: #ffffff;
+  background-color: #D95043;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+button:hover {
+  background-color: #D95043;
+}
+
+
+button:focus {
+  outline: none;
+  
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #D95043;
+}
+
+.link-register-container {
+  margin-top: 1.5rem; 
+  text-align: center;
+}
+
+.link-register {
+  font-size: 0.875rem; 
+  line-height: 1.25rem;  
+  
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+
+.link-primary:hover {
+  color: #3b82f6;
+}
