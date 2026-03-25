@@ -1,11 +1,26 @@
 body {
     margin: 0 150px;
+    background-color: #54595F;
 }
-
+/*PARRAFOS*/
+p{
+    color: white;
+}
+/*SECCIÓN*/
+section{
+    background-color: #919191;
+}
+/*TITULOS*/
+.titulos-carta{
+    text-align: center;
+    font-size: 40px;
+    color: #D95043;
+}
+/*ENTRANTES*/
 .entrantes-fila1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .imagen-carta {
@@ -15,37 +30,45 @@ body {
 .entrantes-fila2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /*PRINCIPALES*/
 .principales-fila1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .principales-fila2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /*POSTRES*/
 .postres-fila1 {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    
+    align-items: center;
+    justify-content: space-around; 
 }
 
 .postres-fila2 {
     display: flex;
-    border: 1px solid black;
-    margin: 0 40px;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 
 }
 
 /*BEBIDAS*/
+.bebidas-fila1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bebidas-fila2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
