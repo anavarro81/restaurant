@@ -1,4 +1,4 @@
-// Sustituimos el array de objetos por dos arrays paralelos
+
 const validEmails = [
   "Antonio@gmail.com",
   "Matias@gmail.com",
