@@ -11,7 +11,7 @@
     <div class="main-container">
       <div class="card-container">
         <h2 class="">Iniciar Sesión</h2>
-        <form class="space-y-4">
+        <form class="">
           <div>
             <label for="email" class=""> Correo Electrónico </label>
             <input
@@ -25,13 +25,8 @@
             />
           </div>
           <div>
-            <label
-              for="password"
-              class="block text-sm font-medium text-gray-700"
-            >
-              Contraseña
-            </label>
-            <div class="mt-1 relative rounded-md shadow-sm">
+            <label for="password" class=""> Contraseña </label>
+            <div class="">
               <input
                 type="password"
                 id="password"
@@ -42,17 +37,21 @@
                 autocomplete="current-password"
               />
             </div>
+            <p class="error-msg" id="error-msg"></p>
           </div>
           <div>
-            <button type="submit" class="">Iniciar Sesión</button>
+            <button type="button" class="" onclick="login()">
+              Iniciar Sesión
+            </button>
           </div>
         </form>
         <div class="link-register-container">
-          <a href="3" class="link-register">
+          <a href="#" class="link-register">
             ¿No tienes una cuenta? Regístrate
           </a>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
