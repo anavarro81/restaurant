@@ -1,0 +1,51 @@
+body {
+    margin: 0 150px;
+}
+
+.entrantes-fila1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagen-carta {
+    width: 15%;
+}
+
+.entrantes-fila2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*PRINCIPALES*/
+.principales-fila1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principales-fila2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*POSTRES*/
+.postres-fila1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.postres-fila2 {
+    display: flex;
+    border: 1px solid black;
+    margin: 0 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*BEBIDAS*/
