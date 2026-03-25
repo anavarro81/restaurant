@@ -29,7 +29,7 @@ const login = () => {
   for (let i = 0; i < validEmails.length; i++) {
     if (validEmails[i] === inputEmail && validPasswords[i] === inputPass) {
       credencialesCorrectas = true;
-      window.location.href = `/booking.html?user=${inputEmail}`;
+      window.location.href = `/index-formulario.html?user=${inputEmail}`;
       break; 
     }
   }
