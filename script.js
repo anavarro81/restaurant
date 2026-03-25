@@ -1,47 +1,57 @@
-const email$$ = document.querySelector("#email");
-const pas$$ = document.querySelector("#password");
-const error$$ = document.querySelector("#error-msg");
-
-const validUsers = [
-  {
-    email: "Antonio@gmail.com",
-    password: "12345b",
-  },
-
-  {
-    email: "Matias@gmail.com",
-    password: "12345b",
-  },
-
-  {
-    email: "Michelle@gmail.com",
-    password: "12345b",
-  },
-
-  {
-    email: "Itziar@gmail.com",
-    password: "12345b",
-  },
-
-  {
-    email: "Davinia@gmail.com",
-    password: "12345b",
-  },
+// Sustituimos el array de objetos por dos arrays paralelos
+const validEmails = [
+  "Antonio@gmail.com",
+  "Matias@gmail.com",
+  "Michelle@gmail.com",
+  "Itziar@gmail.com",
+  "Davinia@gmail.com"
 ];
 
+const validPasswords = [
+  "12345b",
+  "12345b",
+  "12345b",
+  "12345b",
+  "12345b"
+];
 
 const login = () => {
-  console.log("email", email$$.value);
-  console.log("pass", pas$$.value);
+  const email$$ = document.querySelector("#email");
+  const pas$$ = document.querySelector("#password");
+  const error$$ = document.querySelector("#error-msg");
 
-  for (const user in validUsers) {
-    const element = validUsers[user];
+  const inputEmail = email$$.value;
+  const inputPass = pas$$.value;
 
-    if (element.email == email$$.value && element.password == pas$$.value) {
-      window.location.href = "/booking.html";
-    } else {
-      console.log("credenciales incorrectas");
-      error$$.innerText = "credenciales incorrectas";
+  
+  let credencialesCorrectas = false;
+
+  for (let i = 0; i < validEmails.length; i++) {
+    if (validEmails[i] === inputEmail && validPasswords[i] === inputPass) {
+      credencialesCorrectas = true;
+      window.location.href = `/booking.html?user=${inputEmail}`;
+      break; 
     }
   }
+
+  
+  if (!credencialesCorrectas) {
+    console.log("credenciales incorrectas");
+    error$$.innerText = "credenciales incorrectas";
+  }
 };
+
+const getData = () => {
+  console.log("Ruta actual = ", window.location.href);
+
+  if (window.location.href.indexOf("login.html") > 0) {
+    console.log("Estoy en login");
+  } else if (window.location.href.indexOf("booking.html") > 0) {
+    console.log("Estoy en booking");
+    const params = new URLSearchParams(window.location.search);
+    const user = params.get("user");
+    console.log(`Hola ${user}`);
+  }
+};
+
+window.onload = getData;
