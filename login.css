@@ -1,0 +1,216 @@
+:root {
+  
+  --text-color: #D1D5DB;
+  --main-color:  #D95043;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+
+  padding: 1rem; /
+}
+
+.card-container {  
+  background-color: #ffffff;  
+  padding: 2rem;   
+  border-radius: 0.5rem;   
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  width: 100%;
+  background-image: url("https://thefoodiehub.es/wp-content/uploads/2025/11/bg_4.jpg");
+  
+  max-width: 28rem; 
+}
+
+h2 {
+ 
+  font-size: 1.875rem; 
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem; 
+  text-align: center;
+  
+
+}
+
+h2, label {
+  color: var(--text-color)
+}
+
+label {
+  display: block;
+  font-size: 0.875rem; 
+  line-height: 1.25rem;
+  font-weight: 500;
+  
+}
+
+input {
+  margin-top: 0.25rem; 
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem; 
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;  
+  
+  border-color: #D95043;
+}
+
+.input-password {
+  
+  display: block;
+  width: 100%;
+
+  
+  padding: 0.5rem 0.75rem; 
+
+  
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  
+  box-sizing: border-box; 
+}
+
+
+.input-password::placeholder {
+  color: #9ca3af;
+}
+
+
+.input-password:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: #D95043;
+  
+  
+}
+
+.input-icon-container {
+  
+  position: absolute;  
+  top: 0;
+  bottom: 0;  
+  right: 0;  
+  padding-right: 0.75rem;   
+  display: flex;
+  align-items: center;
+}
+
+button {
+  
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  
+  padding: 0.5rem 1rem; 
+  font-size: 0.875rem; 
+  font-weight: 500;
+
+  
+  border: 1px solid transparent;
+  border-radius: 0.375rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  
+  color: #ffffff;
+  background-color: #D95043;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+button:hover {
+  background-color: #D95043;
+}
+
+
+button:focus {
+  outline: none;
+  
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #D95043;
+}
+
+.link-register-container {
+  margin-top: 1.5rem; 
+  text-align: center;
+}
+
+.link-register {
+  font-size: 0.875rem; 
+  line-height: 1.25rem;  
+  
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+
+.link-primary:hover {
+  color: #3b82f6;
+}
+
+.error-msg {
+  color: red;
+}
+
+.form-container {
+  
+}
+
+.input-form {
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+
+display: block;
+transition: 0.2s linear;
+box-sizing: border-box;
+color: rgba(209, 213, 219, 0.38);
+font: inherit;
+margin: 0px;
+font-family: Roboto, sans-serif;
+outline: none;
+border-radius: 0px;
+min-height: 47px;
+padding: 6px 16px;
+border: 1px solid rgb(105, 114, 125);
+appearance: none;
+height: 40px;
+border-color: rgba(255, 255, 255, 0.08);
+background: var(--ast-comment-inputs-background);
+box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+font-style: normal;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.17);
+flex-grow: 1;
+max-width: 100%;
+flex-basis: 100%;  
+}
+
+.link-register-container a {
+  color: var(--text-color);
+}
+

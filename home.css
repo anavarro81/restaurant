@@ -80,6 +80,10 @@ header {
     list-style: none;
 }
 
+a{
+    list-style: none;
+}
+
 #red {
     color: #D95043;
 }
