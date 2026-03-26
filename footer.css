@@ -1,0 +1,52 @@
+.cajainfo{display: flex;
+justify-content: space-evenly;
+font-size: 25px;
+line-height: 1.6;
+}
+
+#cc{display: flex;
+    background-color: black;
+    padding: 50px;
+    align-items: end;
+    justify-content: center;
+    color: gray;
+    max-width: 100%;
+    
+}
+
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b1b;
+  color: gray;
+  font-size: 20px;
+ font-family: 'roboto', 'arial';
+}
+
+footer {
+  margin-top: auto; 
+  
+  
+}
+
+
+p{max-width: 420px;}
+
+h3{color:white;}
+
+ul{list-style: none;}
+
+.info1{margin-left: 15px;
+padding-left: 5px;
+line-height: 2;}
+
+
+.icono{width: 17px;
+      height: 17px;
+      fill:  #D95043;}
+
+  .icono :hover {color: aliceblue;}   
