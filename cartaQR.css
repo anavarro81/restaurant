@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-image: url(/img/fondo.jpg);
+    padding: 40px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+a:hover{
+    color: red;
+    background-color: orange;
+}
+img{
+    width: 300px;
+}
