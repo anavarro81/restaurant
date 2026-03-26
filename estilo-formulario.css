@@ -1,3 +1,9 @@
+body{background-color: black;
+font-family: 'roboto', 'arial';
+max-width: 920px;
+margin: 0 auto;
+color: white;}  /*estilo del formulario*/
+
 input[type="text"],
 [type="date"],
 [type="tel"],
@@ -7,6 +13,7 @@ input[type="text"],
     border-radius: 10px;
     width: 350px;
     height: 40px;
+   
 }
 
 textarea{border-radius: 10px;
@@ -15,30 +22,36 @@ height: 100px;}
 
 
 
-.caja1 {width: 95%;
+.caja1 {width: 95%;        /*caja donde esta el formulario*/
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    background-color: #2a2e33;}
+    background-image: url(img/fondo_formulario.avif);
+    background-repeat: no-repeat;
+    background-size: cover;}
 
-.caja2{margin: 20px;}
+.caja2{margin: 20px;
+color:#7A7A7A}
 
 section{display: flex;
 flex-wrap: wrap;}
 
-h2{text-align: center;}
+h2{text-align: center; /*reserva (titulo)*/
+color:white;
+font-size: 30px;}
 
-.caja2{color:#7A7A7A}
 
-input[type="submit"]{width: 900vh;
+
+button {width: 900vh;  /*boton de enviar formulario*/
 height: 50px;
 background-color: #D95043;
 color: white;
 border-radius: 10px;
 }
 
+button:hover{color: #ccc;}
 
 
 
