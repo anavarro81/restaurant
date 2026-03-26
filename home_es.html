@@ -12,29 +12,31 @@
 </head>
 <body>
     <header>
-        <div class="title">
-            <img class="logo" src="img/paella_logo.png" alt="logo" height="60px">
+    <div class="title">
+        <img class="logo" src="img/paella_logo.png" alt="logo">
+        <div class="name">
             <h1>RESTAURANTE EL SOCARRAT</h1>
             <h2>VERDADERO CRUJIENTE VALENCIANO</h2>
         </div>
-        <div class="nav">
-            <ul>
-                <li>Home</li>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li id="red">Hogar</li>
                 <li>Iniciar Sesión</li>
                 <li>Reserva</li>
                 <li>Menú</li>
             </ul>
-            <ul>
-                <li><img src="assets/images/es.svg" alt="Espanol" height="20px"></li>
-                <li><img src="assets/images/en-us.svg" alt="English" height="20px"></li>
+            <ul class="languages">
+                <li><img src="assets/images/es.svg" alt="Español" height="30px"></li>
+                <li><a href="home_en.html"><img src="assets/images/en-us.svg" alt="English" height="30px"></a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <section>
         <img class="slider" src="assets/images/slider-1.jpg" alt="slider">
         <article class="part">
             <h2 class="messages">El aroma valenciano en solo un bocado.</h2>
-            <img src="img/paella.jpg" alt="paella ejemplo" height="500px">
+            <img class="paella" src="img/paella.jpg" alt="paella ejemplo" height="500px">
             <p class="description">
                 Deléitese con nuestra carta variada de comida española desde lo más profundo de la cocina tradicional valenciana.
             </p>
@@ -49,6 +51,24 @@
                 nuestros experimentados y preparados chefs, acompañado del ambiente que necesitas. ¡Prepárate para viajar a la
                 propia costa del Levante! 
             </p>
+        </article>
+        <article id="examples">
+            <div class="decoration">
+                <h3>Chef Experto</h3>
+                <a href=""><p>Ver Menú</p></a>
+            </div>
+            <div class="decoration">
+                <h3>Alimentos Higiénicos</h3>
+                <a href=""><p>Ver Menú</p></a>
+            </div>
+            <div class="decoration">
+                <h3>Ambiente Fresco</h3>
+                <a href=""><p>Ver Menú</p></a>
+            </div>
+            <div class="decoration">
+                <h3>Receta Secreta</h3>
+                <a href=""><p>Ver Menú</p></a>
+            </div>
         </article>
     </section>
     <footer>
@@ -65,7 +85,7 @@
         <div class="info">
             <h3>Nuestros enlaces</h3>
             <ul>
-                <li>Home</li>
+                <li>Hogar</li>
                 <li>Sobre Nosotros</li>
                 <li>Menús</li>
                 <li>Reserva</li>
@@ -88,8 +108,11 @@
             <h3>¿Tienes alguna pregunta?</h3>
             <ul>
                 <li>Calle de los Azahares 47, 46099 Valencia</li>
+                <br>
                 <li>+34 679 482 915</li>
+                <br>
                 <li>ayuda@elsocarrat.com</li>
+                <br>
                 <li>@elsocarratvlc</li>
             </ul>
             <p id="cc">Copyright © Restaurante El Socarrat. Todos lo derechos reservados.</p>
