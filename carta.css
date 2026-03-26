@@ -4,20 +4,28 @@ body {
     margin: 0 150px;
     background-color: #54595F;
 }
+
 /*PARRAFOS*/
-p{
+p {
     color: white;
     font-family: "Roboto", sans-serif;
 }
+
 /*SECCIÓN*/
-section{
+section {
     background-color: #919191;
 }
+
 /*TITULOS*/
-.titulos-carta{
+.titulos-carta {
     text-align: center;
     font-size: 40px;
     color: #D95043;
+}
+/*TITULO MENU*/
+.titulo-menu{
+    font-size: 60px;
+    text-align: center;
 }
 /*ENTRANTES*/
 .entrantes-fila1 {
@@ -27,13 +35,80 @@ section{
 }
 
 .imagen-carta {
-    width: 15%;
+    width: 20%;
+    border-radius: 70px;
 }
 
+/*ENTRANTES PAN CON TOMATE*/
+.panConTomate {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 8px 10px;
+}
+
+.panConTomate:hover {
+    transform: scale(1.05);
+}
+
+/*ENTRANTES CROQUETAS*/
+.croquetas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 19px;
+}
+
+.croquetas:hover {
+    transform: scale(1.05);
+}
+
+/*ENTRANTES FILA 2*/
 .entrantes-fila2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/*Ensalada*/
+.ensalada {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    background-color: black;
+    margin: 0 30px;
+    padding: 19px 60px;
+    box-shadow: 5px 5px 5px white
+}
+
+.ensalada:hover {
+    transform: scale(1.05);
+
+}
+
+/*TABLA DE QUESOS*/
+.tablaQuesos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 16px 18px;
+}
+
+.tablaQuesos:hover {
+    transform: scale(1.05);
 }
 
 /*PRINCIPALES*/
@@ -43,35 +118,206 @@ section{
     justify-content: space-around;
 }
 
+/*LUBINA*/
+.lubina {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 23px 30px;
+}
+
+.lubina:hover {
+    transform: scale(1.05);
+}
+
+/*ARROZ CALDOSO*/
+.arroz {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 18px 10px;
+}
+
+.arroz:hover {
+    transform: scale(1.05);
+}
+
+/*PRINCIPALES FILA 2*/
 .principales-fila2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+/*ENTRECOT*/
+.entrecot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 10px 0px;
+}
+
+.entrecot:hover {
+    transform: scale(1.05);
+}
+
+/*PASTA*/
+.pasta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 18px 20px;
+}
+
+.pasta:hover {
+    transform: scale(1.05);
+}
+
 /*POSTRES*/
 .postres-fila1 {
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
+/*TARTA DE QUESO*/
+.tarta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 13px 20px;
+}
+
+.tarta:hover {
+    transform: scale(1.05);
+}
+
+/*BROWNIE*/
+.brownie {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 20px 45px;
+}
+
+.brownie:hover {
+    transform: scale(1.05);
+}
+
+/*POSTRES FILA 2 - FRUTA*/
 .postres-fila2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 auto;
+    padding: 20px;
+    width: 600px;
 }
-
+.postres-fila2:hover{
+    transform: scale(1.05);
+}
 /*BEBIDAS*/
-.bebidas-fila1{
+.bebidas-fila1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.bebidas-fila2{
+
+/*AGUA, REFRESCOS*/
+.refrescos {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 15px 45px;
+}
+
+.refrescos:hover {
+    transform: scale(1.05);
+}
+
+/*CERVEZA*/
+.cerveza {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 19px 45px;
+}
+
+.cerveza:hover {
+    transform: scale(1.05);
+}
+
+/*BEBIDAS FILA 2*/
+.bebidas-fila2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*VINO*/
+.vino {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 10px 40px;
+}
+
+.vino:hover {
+    transform: scale(1.05);
+}
+
+/*CAFE*/
+.cafe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px white ;
+    background-color: black;
+    margin: 0 30px;
+    padding: 20px 82px;
+}
+
+.cafe:hover {
+    transform: scale(1.05);
 }
