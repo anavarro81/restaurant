@@ -86,6 +86,25 @@ header {
 
 .slider{
     width: 100%;
+    position: relative;
+}
+
+button{
+    background-color: #D95043;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 25px;
+    border: none;
+    padding: 20px 30px;
+}
+
+button:hover{
+    background-color: #96372f;
+    color: rgb(185, 185, 185);
+    font-family: "Montserrat";
+    font-size: 25px;
+    border: none;
+    padding: 20px 30px;
 }
 
 .part{
