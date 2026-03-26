@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante "El socarrat"</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./img/paella.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilo-formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script-formulario.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +24,7 @@
                     <label for="nombredelusuario">Nombre:</label>
                     <br>
                     <br>
-                    <input type="text" id="nombredelusuario" name="usuario" placeholder="nombre" required>
+                    <input type="text" id="nombredelusuario" name="usuario" placeholder="Nombre" required>
                 </div>
 
 
@@ -35,7 +40,7 @@
                     <label for="emaildelusuario">Email:</label>
                     <br>
                     <br>
-                    <input type="email" id="emaildelusuario" name="email" placeholder="email" required>
+                    <input type="email" id="emaildelusuario" name="email" placeholder="@gmail.com" required>
                 </div>
 
                 <div class="caja2">
@@ -57,33 +62,34 @@
                     <p>Selecciona tu preferencia:</p>
                     <input type="radio" id="afuera" name="ubicacion" value="afuera">
                     <label for="afuera">Afuera</label>
-               
+
                     <input type="radio" id="adentro" name="ubicacion" value="adentro">
                     <label for="adentro">Adentro</label>
-                    </div>
-
-                <div class="caja2">
-                <label for="fecha">Fecha para la reserva:</label>
-                <br>
-                <br>
-                <input type="date" id="fecha" name="fecha" value="2026-03-25" required>
                 </div>
 
                 <div class="caja2">
-                <label for="hora">Selecciona una hora:</label>
-                <br>
-                <br>
-                <input type="time" id="hora" name="hora" required>
+                    <label for="fecha">Fecha para la reserva:</label>
+                    <br>
+                    <br>
+                    <input type="date" id="fecha" name="fecha" value="2026-03-25" required>
+                </div>
+
+                <div class="caja2">
+                    <label for="hora">Selecciona una hora:</label>
+                    <br>
+                    <br>
+                    <input type="time" id="hora" name="hora" required>
                 </div>
                 <br>
                 <div class="caja2">
-                <label for="mensaje">Sugerencia:</label>
-                <br>
-                <textarea name="mensaje" id="mensaje"></textarea>
+                    <label for="mensaje">Sugerencia:</label>
+                    <br>
+                    <br>
+                    <textarea name="mensaje" id="mensaje"></textarea>
                 </div>
-<br>
+                <br>
 
-<input type="submit" value="Enviar Reserva →">
+                <button type="button" onclick="enviarReserva()">Enviar Reserva</button>
 
 
 
