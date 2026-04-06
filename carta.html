@@ -6,23 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante "El socarrat"</title>
     <link rel="stylesheet" href="carta.css" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css" />
     <link rel="shortcut icon" href="./img/paella.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <section>
+    <header>
+        <div class="title">
+            <img class="logo" src="img/paella_logo.png" alt="logo">
+            <div class="name">
+                <h1>RESTAURANTE EL SOCARRAT</h1>
+                <h2>VERDADERO CRUJIENTE VALENCIANO</h2>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li id="red"><a href="/">Hogar</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="index-formulario.html">Reserva</a></li>
+                <li><a href="carta.html">Menú</a></li>
+            </ul>
+            <ul class="languages">
+                <li><img src="assets/images/es.svg" alt="Español" height="30px"></li>
+                <li><a href="home_en.html"><img src="assets/images/en-us.svg" alt="English" height="30px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="carta">
     <h2 class="titulo-menu">Carta</h2>
     <h2 class="titulos-carta">Entrantes</h2>
     <div class="entrantes-fila1">
         <div class="panConTomate">
-        <img class="imagen-carta" src="/img/pan con tomate.jpg" alt="Pan con tomate y jamón">
-        <p>Pan con tomate y jamón</p>
+        <img class="imagenCarta" src="/img/pan con tomate.jpg" alt="Pan con tomate y jamón">
+        <p class="cartaNombre">Pan con tomate y jamón</p>
         <p>—————</p>
         <p>4.50€</p>
         </div>
         <div class="croquetas">
-        <img class="imagen-carta" src="/img/croquetas.jpg" alt="Croquetas">
-        <p>Croquetas de la abuela(6 uds)</p>
+        <img class="imagenCarta" src="/img/croquetas.jpg" alt="Croquetas">
+        <p class="cartaNombre">Croquetas de la abuela(6 uds)</p>
         <p>—————</p>
         <p>7.00€</p>
         </div>
@@ -30,14 +56,14 @@
     <br>
     <div class="entrantes-fila2">
         <div class="ensalada">
-        <img class="imagen-carta" src="/img/ensalada.jpg" alt="Ensalada mixta">
-        <p>Ensalada mixta</p>
+        <img class="imagenCarta" src="/img/ensalada.jpg" alt="Ensalada mixta">
+        <p class="cartaNombre">Ensalada mixta</p>
         <p>—————</p>
         <p>6.50€</p>
         </div>
         <div class="tablaQuesos">
-        <img class="imagen-carta" src="/img/tabla de quesos.jpg" alt="Tabla de quesos">
-        <p>Tabla de quesos</p>
+        <img class="imagenCarta" src="/img/tabla de quesos.jpg" alt="Tabla de quesos">
+        <p class="cartaNombre">Tabla de quesos</p>
         <p>—————</p>
         <p>9.00€</p>
         </div>
@@ -45,14 +71,14 @@
     <h2 class="titulos-carta">Principales</h2>
     <div class="principales-fila1">
         <div class="lubina">
-        <img class="imagen-carta" src="/img/lubina.jpg" alt="Lubina a la plancha con verduras">
-        <p>Lubina a la plancha con verduras</p>
+        <img class="imagenCarta" src="/img/lubina.jpg" alt="Lubina a la plancha con verduras">
+        <p class="cartaNombre">Lubina a la plancha con verduras</p>
         <p>—————</p>
         <p>16.00€</p>
         </div>
         <div class="arroz">
-        <img class="imagen-carta" src="/img/arroz con marisco.jpg" alt="Arroz caldoso de marisco">
-        <p>Arroz caldoso de marisco</p>
+        <img class="imagenCarta" src="/img/arroz con marisco.jpg" alt="Arroz caldoso de marisco">
+        <p class="cartaNombre" >Arroz caldoso de marisco</p>
         <p>—————</p>
         <p>18.00€</p>
         </div>
@@ -60,14 +86,14 @@
     <br>
     <div class="principales-fila2">
         <div class="entrecot">
-        <img class="imagen-carta" src="/img/entrecot.jpg" alt="Entrecot con patatas bravas">
-        <p>Entrecot con patatas bravas</p>
+        <img class="imagenCarta" src="/img/entrecot.jpg" alt="Entrecot con patatas bravas">
+        <p class="cartaNombre">Entrecot con patatas bravas</p>
         <p>—————</p>
         <p>19.50€</p>
         </div>
         <div class="pasta">
-        <img class="imagen-carta" src="/img/pasta con gambas.jpg" alt="pasta al pesto con gambas">
-        <p>Pasta al pesto con gambas</p>
+        <img class="imagenCarta" src="/img/pasta con gambas.jpg" alt="pasta al pesto con gambas">
+        <p class="cartaNombre">Pasta al pesto con gambas</p>
         <p>—————</p>
         <p>14.00€</p>
         </div>
@@ -75,22 +101,22 @@
     <h2 class="titulos-carta">Postres</h2>
     <div class="postres-fila1">
         <div class="tarta">
-        <img class="imagen-carta" src="/img/tarta de queso.jpg" alt="Tarta de queso casera">
-        <p>Tarta de queso casera</p>
+        <img class="imagenCarta" src="/img/tarta de queso.jpg" alt="Tarta de queso casera">
+        <p class="cartaNombre">Tarta de queso casera</p>
         <p>—————</p>
         <p>5.50€</p>
         </div>
         <div class="brownie">
-        <img class="imagen-carta" src="/img/browni.jpg" alt="Bownie con helado">
-        <p>Brownie con helado</p>
+        <img class="imagenCarta" src="/img/browni.jpg" alt="Bownie con helado">
+        <p class="cartaNombre">Brownie con helado</p>
         <p>—————</p>
         <p>5.00€</p>
         </div>
     </div>
     <br><br>
     <div class="postres-fila2">
-        <img class="imagen-carta" src="/img/fruta.jpg" alt="Fruta de temporada">
-        <p>Fruta de temporada</p>
+        <img class="imagenCarta" src="/img/fruta.jpg" alt="Fruta de temporada">
+        <p class="cartaNombre">Fruta de temporada</p>
         <p>—————</p>
         <p>4.00€</p>
     </div>
@@ -98,14 +124,14 @@
     <h2 class="titulos-carta">Bebidas</h2>
     <div class="bebidas-fila1">
         <div class="refrescos">
-        <img class="imagen-carta" src="/img/refrescos.jpg" alt="Agua, refrescos">
-        <p>Agua, refrescos</p>
+        <img class="imagenCarta" src="/img/refrescos.jpg" alt="Agua, refrescos">
+        <p class="cartaNombre">Agua, refrescos</p>
         <p>—————</p>
         <p>2.00€</p>
         </div>
         <div class="cerveza">
-        <img class="imagen-carta" src="/img/cerveza.jpg" alt="Cerveza">
-        <p>Cerveza</p>
+        <img class="imagenCarta" src="/img/cerveza.jpg" alt="Cerveza">
+        <p class="cartaNombre">Cerveza</p>
         <p>—————</p>
         <p>2.50€</p>
         </div>
@@ -113,19 +139,101 @@
     <br>
     <div class="bebidas-fila2">
         <div class="vino">
-        <img class="imagen-carta" src="/img/copa de vino.jpg" alt="Copa de vino">
-        <p>Copa de vino</p>
+        <img class="imagenCarta" src="/img/copa de vino.jpg" alt="Copa de vino">
+        <p class="cartaNombre">Copa de vino</p>
         <p>—————</p>
         <p>3.50€</p>
         </div>
         <div class="cafe">
-        <img class="imagen-carta" src="/img/cafe.jpg" alt="Café">
-        <p>Café</p>
+        <img class="imagenCarta" src="/img/cafe.jpg" alt="Café">
+        <p class="cartaNombre">Café</p>
         <p>—————</p>
         <p>1.80€</p>
         </div>
     </div>
     </section>
+        <div id="footer"> 
+    <footer>
+        <div class="cajainfo">
+            <div class="info">
+
+                <h3>Sobre nosotros</h3>
+                <p>
+                    En EL Socarrat encontrarás esa <strong>vibra valenciana</strong> en cada bocado de nuestra carta.
+                    Somos una empresa que
+                    cuidamos la calidad de nuestros productos <strong>uno por uno</strong> para poder ofrecerte
+                    <strong>no solo</strong> una
+                    buena <strong> comida</strong>, sino una <strong>experiencia</strong>. Gracias a nuestros chefs de
+                    la cocina más
+                    <strong>tradicional española</strong> y más <strong>refinada</strong> de la década, puedes disfrutar
+                    de nuestro servicio tanto
+                    en nuestros locales como desde la comodidad de tu <strong>casa</strong>.
+                </p>
+            </div>
+            <div class="info1">
+                <h3>Nuestros enlaces</h3>
+                <ul>
+                    <li>Hogar</li>
+                    <li>Sobre Nosotros</li>
+                    <li>Menús</li>
+                    <li>Reserva</li>
+                    <li>Evento</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <br>
+            <div class="info1">
+                <h3>Horario de apertura</h3>
+                <ul>
+                    <li>Lunes ---------- 12:00 - 00:00</li>
+                    <li>Martes ---------- 12:00 - 00:00</li>
+                    <li>Miércoles ---------- 12:00 - 00:00</li>
+                    <li>Jueves ---------- 12:00 - 00:00</li>
+                    <li>Viernes ---------- 12:00 - 00:00</li>
+                    <li>Sábado ---------- 12:00 - 00:00</li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <h3>¿Tienes alguna pregunta?</h3>
+                <ul>
+                    <li> <svg  class="icono" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512">
+                            <path
+                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                        </svg> Calle de los Azahares 47, 46099 Valencia</li>
+                    <br>
+
+
+                    <li><svg class="icono" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512">
+                            <path
+                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
+                        </svg> +34 679 482 915</li>
+                    <br>
+
+
+                    <li><svg class="icono" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            class="e-font-icon-svg e-far-envelope" viewBox="0 0 512 512">
+                            <path
+                                d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
+                        </svg> ayuda@elsocarrat.com</li>
+                    <br>
+
+
+                    <li><svg class="icono" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg> @elsocarratvlc</li>
+                </ul>
+            </div>
+        </div>
+        <p id="cc">Copyright © Restaurante El Socarrat. Todos lo derechos reservados.</p>
+
+
+    </footer>
+    </div>
 </body>
 
 </html>
