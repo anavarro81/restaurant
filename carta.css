@@ -6,15 +6,15 @@ body {
 }
 
 /*PARRAFOS*/
-p {
+.cartaNombre {
     color: white;
     font-family: "Roboto", sans-serif;
 }
 
 /*SECCIÓN*/
-section {
+section.carta {
     background-color: #919191;
-    padding-bottom: 50px; 
+    padding-bottom: 40px; 
     background-image: url(/img/fondo.jpg);       
 }
 
@@ -47,7 +47,7 @@ section {
     justify-content: space-around;
 }
 
-.imagen-carta {
+.imagenCarta {
     width: 20%;
     border-radius: 70px;
 }
@@ -61,7 +61,7 @@ section {
     box-shadow: 5px 5px 5px white ;
     background-color: black;
     margin: 0 30px;
-    padding: 8px 28px;
+    padding: 8px 38px;
 }
 
 .panConTomate:hover {
@@ -98,8 +98,7 @@ section {
     justify-content: space-around;
     border: 1px solid white;
     background-color: black;
-    margin: 0 30px;
-    padding: 19px 60px;
+    padding: 19px 112px;
     box-shadow: 5px 5px 5px white
 }
 
@@ -116,8 +115,7 @@ section {
     border: 1px solid white;
     box-shadow: 5px 5px 5px white ;
     background-color: black;
-    margin: 0 30px;
-    padding: 16px 18px;
+    padding: 16px 55px;
 }
 
 .tablaQuesos:hover {
@@ -139,8 +137,8 @@ section {
     border: 1px solid white;
     box-shadow: 5px 5px 5px white ;
     background-color: black;
-    margin: 0 30px;
-    padding: 23px 28px;
+    margin: 0 25px;
+    padding: 23px 39px;
 }
 
 .lubina:hover {
@@ -156,7 +154,7 @@ section {
     box-shadow: 5px 5px 5px white ;
     background-color: black;
     margin: 0 30px;
-    padding: 18px 10px;
+    padding: 18px 14px;
 }
 
 .arroz:hover {
@@ -273,7 +271,7 @@ section {
     box-shadow: 5px 5px 5px white ;
     background-color: black;
     margin: 0 30px;
-    padding: 15px 49px;
+    padding: 15px 85px;
 }
 
 .refrescos:hover {
@@ -289,7 +287,7 @@ section {
     box-shadow: 5px 5px 5px white ;
     background-color: black;
     margin: 0 30px;
-    padding: 19px 45px;
+    padding: 19px 69px;
 }
 
 .cerveza:hover {

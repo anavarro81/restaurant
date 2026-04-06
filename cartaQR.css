@@ -1,12 +1,12 @@
 body{
     background-color: black;
 }
-h2{
+.cartah2{
     text-align: center;
     color: white;
     font-size: 50px;
 }
-div{
+.cartadiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@ div{
     padding: 40px;
 
 }
-a{
+.cartadiv a{
     text-decoration: none;
     color: black;
     border: 1px solid black;
@@ -24,10 +24,10 @@ a{
     border-radius: 30px;
     background-color: white;
 }
-a:hover{
+.cartadiv a:hover{
     color: red;
     background-color: orange;
 }
-img{
+.cartaQr{
     width: 300px;
 }
