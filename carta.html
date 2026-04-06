@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="carta.css" />
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="shopping-cart.css" />
     <link rel="shortcut icon" href="./img/paella.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-container">
         <div class="title">
             <img class="logo" src="img/paella_logo.png" alt="logo">
             <div class="name">
@@ -35,6 +36,62 @@
                 <li><a href="home_en.html"><img src="assets/images/en-us.svg" alt="English" height="30px"></a></li>
             </ul>
         </nav>
+        <!-- Icono carrito inicio -->
+
+        <div role="button" class="cart-container" onclick="toggleCart()">
+        <svg
+          class="cart-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path
+            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+          ></path>
+        </svg>
+
+        <span class="cart-badge"> 0 </span>
+      </div>
+
+      <div class="shopping-cart" >
+        <div class="cart-items">
+
+        </div>
+
+        <footer class="cart-summary">
+          <div class="summary-line">
+            <span class="summary-label">Subtotal</span>
+            <span class="summary-value">0 €</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-label">Envío</span>
+            <span class="summary-value">Gratis</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-label">IVA (10%)</span>
+            <span class="summary-value tax-value">0</span>
+          </div>
+
+          <div class="total-row">
+            <strong class="total-label">Total</strong>
+            <strong class="total-amount">0 </strong> €</strong>
+          </div>
+        </footer>
+
+        <div class="checkout-container">
+          <button class="btn-checkout">Finalizar Pedido</button>
+        </div>
+
+        <!-- carrito de la compra fin -->
+      </div>
+
+        <!-- Icono carrito Fin -->
     </header>
     <section class="carta">
         <h2 class="titulo-menu">Carta</h2>
@@ -48,12 +105,47 @@
                 <p class="cartaNombre">Pan con tomate y jamón</p>
                 <p class="cartaNombre">—————</p>
                 <p class="cartaNombre">4.50€</p>
+                 <button
+            class="add-to-cart"
+            id="add-panConTomate"
+            aria-label="Añadir Pan con tomate"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
             </div>
             <div class="croquetas">
                 <img class="imagenCarta" src="/img/croquetas.jpg" alt="Croquetas">
                 <p class="cartaNombre">Croquetas de la abuela(6 uds)</p>
                 <p class="cartaNombre">—————</p>
                 <p class="cartaNombre">7.00€</p>
+                                 <button
+            class="add-to-cart"
+            id="add-panConTomate"
+            aria-label="Añadir Pan con tomate"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
+
             </div>
         </div>
         <br>
@@ -63,12 +155,48 @@
                 <p class="cartaNombre">Ensalada mixta</p>
                 <p class="cartaNombre">—————</p>
                 <p class="cartaNombre">6.50€</p>
+                                 <button
+            class="add-to-cart"
+            id="add-panConTomate"
+            aria-label="Añadir Pan con tomate"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
+
             </div>
             <div class="tablaQuesos">
                 <img class="imagenCarta" src="/img/tabla de quesos.jpg" alt="Tabla de quesos">
                 <p class="cartaNombre">Tabla de quesos</p>
                 <p class="cartaNombre">—————</p>
                 <p class="cartaNombre">9.00€</p>
+                                 <button
+            class="add-to-cart"
+            id="add-panConTomate"
+            aria-label="Añadir Pan con tomate"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
+
             </div>
         </div>
         <h2 class="titulos-carta">Principales</h2>
@@ -235,6 +363,7 @@
 
 
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
