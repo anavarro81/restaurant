@@ -1,9 +1,3 @@
-body{background-color: black;
-font-family: 'roboto', 'arial';
-max-width: 920px;
-margin: 0 auto;
-color: white;}  /*estilo del formulario*/
-
 input[type="text"],
 [type="date"],
 [type="tel"],
@@ -15,6 +9,13 @@ input[type="text"],
     height: 40px;
    
 }
+
+.formulario{max-width: 920px;background-color: black;
+font-family: 'roboto', 'arial';
+margin: 0 auto;
+color: white;}  /*estilo del formulario*/
+
+header{width: 100%;}
 
 textarea{border-radius: 10px;
 width: 500px;
@@ -35,16 +36,16 @@ height: 100px;}
 .caja2{margin: 20px;
 color:#7A7A7A}
 
-section{display: flex;
+.section-formulario{display: flex;
 flex-wrap: wrap;}
 
-h2{text-align: center; /*reserva (titulo)*/
+.h2formulario{text-align: center; /*reserva (titulo)*/
 color:white;
 font-size: 30px;}
 
 
 
-button {width: 900vh;  /*boton de enviar formulario*/
+.button-formulario {width: 900vh;  /*boton de enviar formulario*/
 height: 50px;
 background-color: #D95043;
 color: white;
