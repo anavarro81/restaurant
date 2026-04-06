@@ -1,131 +1,491 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante "El socarrat"</title>
     <link rel="stylesheet" href="carta.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="shopping-cart.css" />
     <link rel="shortcut icon" href="./img/paella.png" type="image/x-icon" />
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="header-container">
+      <div class="title">
+        <img class="logo" src="img/paella_logo.png" alt="logo" />
+        <div class="name">
+          <h1>RESTAURANTE EL SOCARRAT</h1>
+          <h2>VERDADERO CRUJIENTE VALENCIANO</h2>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li id="red"><a href="/">Hogar</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+          <li><a href="index-formulario.html">Reserva</a></li>
+          <li><a href="carta.html">Menú</a></li>
+        </ul>
+        <ul class="languages">
+          <li>
+            <img src="assets/images/es.svg" alt="Español" height="30px" />
+          </li>
+          <li>
+            <a href="home_en.html"
+              ><img src="assets/images/en-us.svg" alt="English" height="30px"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Icono carrito  -->
+      <div role="button" class="cart-container" onclick="toggleCart()">
+        <svg
+          class="cart-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path
+            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+          ></path>
+        </svg>
+
+        <span class="cart-badge"> 0 </span>
+      </div>
+
+      <div class="shopping-cart" >
+        <div class="cart-items">
+
+        </div>
+
+        <footer class="cart-summary">
+          <div class="summary-line">
+            <span class="summary-label">Subtotal</span>
+            <span class="summary-value">0 €</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-label">Envío</span>
+            <span class="summary-value">Gratis</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-label">IVA (10%)</span>
+            <span class="summary-value tax-value">0</span>
+          </div>
+
+          <div class="total-row">
+            <strong class="total-label">Total</strong>
+            <strong class="total-amount">0 </strong> €</strong>
+          </div>
+        </footer>
+
+        <div class="checkout-container">
+          <button class="btn-checkout">Finalizar Pedido</button>
+        </div>
+
+        <!-- carrito de la compra fin -->
+      </div>
+    </header>
     <section>
-    <h2 class="titulo-menu">Carta</h2>
-    <h2 class="titulos-carta">Entrantes</h2>
-    <div class="entrantes-fila1">
-        <div class="panConTomate">
-        <img class="imagen-carta" src="/img/pan con tomate.jpg" alt="Pan con tomate y jamón">
-        <p>Pan con tomate y jamón</p>
-        <p>—————</p>
-        <p>4.50€</p>
+      <h2 class="titulo-menu">Carta</h2>
+      <h2 class="titulos-carta">Entrantes</h2>
+      <div class="entrantes-fila1">
+        <div class="panConTomate dish">
+          <img
+            class="imagen-carta"
+            src="/img/pan con tomate.jpg"
+            alt="Pan con tomate y jamón"
+          />
+          <p>Pan con tomate y jamón</p>
+          <p>—————</p>
+          <p>4.50€</p>
+          <button
+            class="add-to-cart"
+            id="add-panConTomate"
+            aria-label="Añadir Pan con tomate"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-        <div class="croquetas">
-        <img class="imagen-carta" src="/img/croquetas.jpg" alt="Croquetas">
-        <p>Croquetas de la abuela(6 uds)</p>
-        <p>—————</p>
-        <p>7.00€</p>
+        <div class="croquetas dish">
+          <img class="imagen-carta" src="/img/croquetas.jpg" alt="Croquetas" />
+          <p>Croquetas de la abuela(6 uds)</p>
+          <p>—————</p>
+          <p>7.00€</p>
+          <button
+            class="add-to-cart"
+            id="add-croquetas"
+            aria-label="Añadir Croquetas"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
-    <br>
-    <div class="entrantes-fila2">
-        <div class="ensalada">
-        <img class="imagen-carta" src="/img/ensalada.jpg" alt="Ensalada mixta">
-        <p>Ensalada mixta</p>
-        <p>—————</p>
-        <p>6.50€</p>
+      </div>
+      <br />
+      <div class="entrantes-fila2">
+        <div class="ensalada dish">
+          <img
+            class="imagen-carta"
+            src="/img/ensalada.jpg"
+            alt="Ensalada mixta"
+          />
+          <p>Ensalada mixta</p>
+          <p>—————</p>
+          <p>6.50€</p>
+          <button
+            class="add-to-cart"
+            id="add-ensalada"
+            aria-label="Añadir Ensalada"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-        <div class="tablaQuesos">
-        <img class="imagen-carta" src="/img/tabla de quesos.jpg" alt="Tabla de quesos">
-        <p>Tabla de quesos</p>
-        <p>—————</p>
-        <p>9.00€</p>
+        <div class="tablaQuesos dish">
+          <img
+            class="imagen-carta"
+            src="/img/tabla de quesos.jpg"
+            alt="Tabla de quesos"
+          />
+          <p>Tabla de quesos</p>
+          <p>—————</p>
+          <p>9.00€</p>
+          <button
+            class="add-to-cart"
+            id="add-tablaQuesos"
+            aria-label="Añadir Tabla de quesos"
+            onclick="addToCart(this)"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
-    <h2 class="titulos-carta">Principales</h2>
-    <div class="principales-fila1">
+      </div>
+      <h2 class="titulos-carta">Principales</h2>
+      <div class="principales-fila1">
         <div class="lubina">
-        <img class="imagen-carta" src="/img/lubina.jpg" alt="Lubina a la plancha con verduras">
-        <p>Lubina a la plancha con verduras</p>
-        <p>—————</p>
-        <p>16.00€</p>
+          <img
+            class="imagen-carta"
+            src="/img/lubina.jpg"
+            alt="Lubina a la plancha con verduras"
+          />
+          <p>Lubina a la plancha con verduras</p>
+          <p>—————</p>
+          <p>16.00€</p>
+          <button
+            class="add-to-cart"
+            id="add-lubina"
+            aria-label="Añadir Lubina"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
         <div class="arroz">
-        <img class="imagen-carta" src="/img/arroz con marisco.jpg" alt="Arroz caldoso de marisco">
-        <p>Arroz caldoso de marisco</p>
-        <p>—————</p>
-        <p>18.00€</p>
+          <img
+            class="imagen-carta"
+            src="/img/arroz con marisco.jpg"
+            alt="Arroz caldoso de marisco"
+          />
+          <p>Arroz caldoso de marisco</p>
+          <p>—————</p>
+          <p>18.00€</p>
+          <button class="add-to-cart" id="add-arroz" aria-label="Añadir Arroz">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
-    <br>
-    <div class="principales-fila2">
+      </div>
+      <br />
+      <div class="principales-fila2">
         <div class="entrecot">
-        <img class="imagen-carta" src="/img/entrecot.jpg" alt="Entrecot con patatas bravas">
-        <p>Entrecot con patatas bravas</p>
-        <p>—————</p>
-        <p>19.50€</p>
+          <img
+            class="imagen-carta"
+            src="/img/entrecot.jpg"
+            alt="Entrecot con patatas bravas"
+          />
+          <p>Entrecot con patatas bravas</p>
+          <p>—————</p>
+          <p>19.50€</p>
+          <button
+            class="add-to-cart"
+            id="add-entrecot"
+            aria-label="Añadir Entrecot"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
         <div class="pasta">
-        <img class="imagen-carta" src="/img/pasta con gambas.jpg" alt="pasta al pesto con gambas">
-        <p>Pasta al pesto con gambas</p>
-        <p>—————</p>
-        <p>14.00€</p>
+          <img
+            class="imagen-carta"
+            src="/img/pasta con gambas.jpg"
+            alt="pasta al pesto con gambas"
+          />
+          <p>Pasta al pesto con gambas</p>
+          <p>—————</p>
+          <p>14.00€</p>
+          <button class="add-to-cart" id="add-pasta" aria-label="Añadir Pasta">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
-    <h2 class="titulos-carta">Postres</h2>
-    <div class="postres-fila1">
+      </div>
+      <h2 class="titulos-carta">Postres</h2>
+      <div class="postres-fila1">
         <div class="tarta">
-        <img class="imagen-carta" src="/img/tarta de queso.jpg" alt="Tarta de queso casera">
-        <p>Tarta de queso casera</p>
-        <p>—————</p>
-        <p>5.50€</p>
+          <img
+            class="imagen-carta"
+            src="/img/tarta de queso.jpg"
+            alt="Tarta de queso casera"
+          />
+          <p>Tarta de queso casera</p>
+          <p>—————</p>
+          <p>5.50€</p>
+          <button
+            class="add-to-cart"
+            id="add-tarta"
+            aria-label="Añadir Tarta de queso"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
         <div class="brownie">
-        <img class="imagen-carta" src="/img/browni.jpg" alt="Bownie con helado">
-        <p>Brownie con helado</p>
-        <p>—————</p>
-        <p>5.00€</p>
+          <img
+            class="imagen-carta"
+            src="/img/browni.jpg"
+            alt="Bownie con helado"
+          />
+          <p>Brownie con helado</p>
+          <p>—————</p>
+          <p>5.00€</p>
+          <button
+            class="add-to-cart"
+            id="add-brownie"
+            aria-label="Añadir Brownie"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
-    <br><br>
-    <div class="postres-fila2">
-        <img class="imagen-carta" src="/img/fruta.jpg" alt="Fruta de temporada">
-        <p>Fruta de temporada</p>
-        <p>—————</p>
-        <p>4.00€</p>
-    </div>
-    
-    <h2 class="titulos-carta">Bebidas</h2>
-    <div class="bebidas-fila1">
+      </div>
+      <br /><br />
+      <div class="postres-fila2">
+        <div class="fruta dish">
+          <img
+            class="imagen-carta"
+            src="/img/fruta.jpg"
+            alt="Fruta de temporada"
+          />
+          <p>Fruta de temporada</p>
+          <p>—————</p>
+          <p>4.00€</p>
+          <button
+            class="add-to-cart"
+            id="add-fruta"
+            aria-label="Añadir Fruta de temporada"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
+        </div>
+      </div>
+
+      <h2 class="titulos-carta">Bebidas</h2>
+      <div class="bebidas-fila1">
         <div class="refrescos">
-        <img class="imagen-carta" src="/img/refrescos.jpg" alt="Agua, refrescos">
-        <p>Agua, refrescos</p>
-        <p>—————</p>
-        <p>2.00€</p>
+          <img
+            class="imagen-carta"
+            src="/img/refrescos.jpg"
+            alt="Agua, refrescos"
+          />
+          <p>Agua, refrescos</p>
+          <p>—————</p>
+          <p>2.00€</p>
+          <button
+            class="add-to-cart"
+            id="add-refrescos"
+            aria-label="Añadir Refrescos"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
         <div class="cerveza">
-        <img class="imagen-carta" src="/img/cerveza.jpg" alt="Cerveza">
-        <p>Cerveza</p>
-        <p>—————</p>
-        <p>2.50€</p>
+          <img class="imagen-carta" src="/img/cerveza.jpg" alt="Cerveza" />
+          <p>Cerveza</p>
+          <p>—————</p>
+          <p>2.50€</p>
+          <button
+            class="add-to-cart"
+            id="add-cerveza"
+            aria-label="Añadir Cerveza"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
-    <br>
-    <div class="bebidas-fila2">
+      </div>
+      <br />
+      <div class="bebidas-fila2">
         <div class="vino">
-        <img class="imagen-carta" src="/img/copa de vino.jpg" alt="Copa de vino">
-        <p>Copa de vino</p>
-        <p>—————</p>
-        <p>3.50€</p>
+          <img
+            class="imagen-carta"
+            src="/img/copa de vino.jpg"
+            alt="Copa de vino"
+          />
+          <p>Copa de vino</p>
+          <p>—————</p>
+          <p>3.50€</p>
+          <button class="add-to-cart" id="add-vino" aria-label="Añadir Vino">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
         <div class="cafe">
-        <img class="imagen-carta" src="/img/cafe.jpg" alt="Café">
-        <p>Café</p>
-        <p>—————</p>
-        <p>1.80€</p>
+          <img class="imagen-carta" src="/img/cafe.jpg" alt="Café" />
+          <p>Café</p>
+          <p>—————</p>
+          <p>1.80€</p>
+          <button class="add-to-cart" id="add-cafe" aria-label="Añadir Café">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44C8.89 16.37 9.5 17 10.25 17H19v-2H10.25l.9-1.63L19 6H7V4zM7 20a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+              />
+            </svg>
+            <span>Añadir</span>
+          </button>
         </div>
-    </div>
+      </div>
     </section>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

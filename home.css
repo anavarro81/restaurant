@@ -103,6 +103,7 @@ button{
     padding: 20px 30px;
 }
 
+/* Se comenta afecta a todos los botones de la página.  
 button:hover{
     background-color: #96372f;
     color: rgb(185, 185, 185);
@@ -111,6 +112,7 @@ button:hover{
     border: none;
     padding: 20px 30px;
 }
+*/
 
 .part{
     display: flex;

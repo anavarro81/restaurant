@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pedido de comida</title>
+    <link rel="stylesheet" href="shopping-cart.css" />
+  </head>
+  <body>
+    <section class="shopping-cart">
+      <div class="cart-items">
+        <!-- 
+      <article class="cart-item">
+        <div class="item-image-container">
+          <img src="" alt="Plato de comida" class="item-image" />
+        </div>
+
+        <div class="item-details">
+          <h2 class="item-name">Pan con tomate y jamón</h2>
+          <span> <b>Precio unidad</b>4.5</span> €
+        </div>
+
+        <div class="item-actions">
+          <select
+            name="quantity"
+            class="item-quantity-select"
+            onchange="updateTotal(this)"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="item-total-price-container">
+          <span class="item-total-price">4.5</span>
+          <button type="button" class="btn-remove">Borrar</button>
+        </div>
+      </article>
+
+      
+      <article class="cart-item">
+        <div class="item-image-container">
+          <img src="" alt="Plato de comida" class="item-image" />
+        </div>
+
+        <div class="item-details">
+          <h2 class="item-name">Croquetas de la abuela(6 uds)</h2>
+          <span> <b>Precio unidad</b> 7 </span> €
+        </div>
+
+        <div class="item-actions">
+          <select
+            name="quantity"
+            class="item-quantity-select"
+            onchange="updateTotal(this)"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="item-total-price-container">
+          <span class="item-total-price">4.5</span>
+          <button type="button" class="btn-remove">Borrar</button>
+        </div>
+      </article>
+
+      <article class="cart-item">
+        <div class="item-image-container">
+          <img src="" alt="Plato de comida" class="item-image" />
+        </div>
+
+        <div class="item-details">
+          <h2 class="item-name">Ensalada mixta</h2>
+          <span> <b>Precio unidad</b> 6.5 </span> €
+        </div>
+
+        <div class="item-actions">
+          <select
+            name="quantity"
+            class="item-quantity-select"
+            onchange="updateTotal(this)"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="item-total-price-container">
+          <span class="item-total-price">4.5</span>
+          <button type="button" class="btn-remove">Borrar</button>
+        </div>
+      </article>
+
+      -->
+
+        <hr class="divider" />
+      </div>
+
+      <footer class="cart-summary">
+        <div class="summary-line">
+          <span class="summary-label">Subtotal</span>
+          <span class="summary-value"></span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-label">Envío</span>
+          <span class="summary-value">Gratis</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-label">IVA (10%)</span>
+          <span class="summary-value tax-value">0 €</span>
+        </div>
+
+        <div class="total-row">
+          <strong class="total-label">Total</strong>
+          <strong class="total-amount">0 €</strong>
+        </div>
+      </footer>
+
+      <div class="checkout-container">
+        <button class="btn-checkout">Finalizar Pedido</button>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
